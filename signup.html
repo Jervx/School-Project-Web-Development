@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/signup-style.css">
+    <script src="script/signup.js"></script>
+    <script src="script/globalScript.js"></script>
+    <title>Horizon Sign Up</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-signup-container">
+            <h1>Create Your Account</h1>
+            <p>Already Have An Account? <a id="auth-link" href="login.html">Login</a> Instead</p>
+            <div class="formBlock">
+                <div class="layout">
+                    <form id="signup-form">
+                            <input required autocomplete="off" type="text" id="username" placeholder="create a username">
+                            <input required autocomplete="off" type="password" id="password" placeholder="create a password">
+                            <input required autocomplete="off" type="password" id="confirm-password" placeholder="confirm parssword">
+
+                            <input required autocomplete="off" type="text" id="firstname" placeholder="First Name">
+                            <input required autocomplete="off" type="text" id="lastname" placeholder="Last Name">
+                            <input required autocomplete="off" type="text" id="age" placeholder="age">
+                            
+                            <select autocomplete="off" id="gender" value="" name="Gender">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input required autocomplete="off" type="text" id="email" placeholder="E-Mail Address">
+                            <input required autocomplete="off" type="text" id="mobile" placeholder="Mobile Number">
+                    </form>
+
+                    <div class="warn">
+                        <p>All information you’ve given are considered as confidential</p>
+                        <button onclick="checkData()">Create Account</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="final-footer-div"><div class="footer-h1p1-group"><h1>HORIZON</h1><p>All Rights Reserved 2020</p></div></div>
+        </footer>
+    </main>
+</body>
+</html>

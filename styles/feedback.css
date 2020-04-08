@@ -1,0 +1,154 @@
+.cover{
+    background:rgb(19, 19, 19);
+    background-image: url("/res/background/trans-textrure.png");
+    height: 100px;
+}
+
+.cover h1{
+    color:rgb(245, 245, 245);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.cover-div{
+    padding:100px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+/*********/
+
+.feedback-form{
+    display:flex;
+    justify-content: space-evenly;
+    padding:30px 100px;
+    background-color:rgb(235, 235, 235);
+    margin:30px 100px;
+}
+
+textarea{
+    padding:20px;
+    max-width: 500px;
+    max-height: 170px;
+    font-size: 13px;
+    color:var(--dark1-color);
+    font-family: inherit;
+    line-height: 20px;
+    resize: none;
+}
+
+.bolder{
+    font-weight: bold;
+}
+
+.feedback-details{
+    padding:5px 20px;
+    margin: 5px 20px;
+}
+
+.feedback-details p{
+    line-height: 20px;
+}
+
+.radio-div{
+    display:flex;
+    margin-right:30px;
+}
+
+.feed-flex{
+    display:flex;
+}
+
+input{
+    margin-right: 5px;
+}
+
+.btn{
+    position: relative !important;
+    transition: 0.3s ease-in-out;
+    width:100%;
+    margin-top:40px;
+    border-style: none;
+    padding:10px;
+    background-color: black;
+    border-radius: 5px;
+    color:rgb(245, 245, 245);
+    font-size:15px;
+    padding:15px;
+}
+
+.btn:hover{
+    transition: 0.3s ease-in-out;
+    background-color: rgb(20, 20, 20);
+}
+
+/***************/
+.feedbacks{
+    background-color: #e7e7e7;
+    display:flex;
+    flex-direction: column;
+}
+
+.feedbacks-header{
+    border-top:1px solid black;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgb(47, 47, 47);
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+}
+
+.categories{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.categories p{
+    margin-right:30px;
+}
+
+.feedbacks-data{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 15px;
+    padding:10px 100px;
+    line-height: 25px;
+}
+
+.feedback-container{
+    background-color: rgb(251, 251, 251);
+    padding:20px 40px;
+    margin:8px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.feed-cont{
+    width:700px;
+    padding:20px;
+    border-left: 1px solid gray;
+    color:rgb(51, 51, 51);
+}
+
+.feedback-container{
+    border-left: 2px solid gray;
+    border-radius: 4px;
+}
+
+.feedbacks-details-p{
+    color:rgb(93, 93, 93);
+    line-height: 30px;
+    font-size:13px;
+}
+
+#sent-by{
+    color:rgb(26, 26, 26);
+}
+
+#show-more{
+    text-align: center;
+}

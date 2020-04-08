@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            loadFooter();
+            doesLogin();
+        }
+    </script>
+    <title>Horizon - About</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-cover" >
+            <div class="cover">
+                <div class="cover-sayings">
+                    <h1>Our Mission Is To Make Technological Advancement & Space Innovation Available To Everyone</h1>
+                </div>
+                <div class="blank-box"></div>
+            </div>
+        </section>
+        <section class="history-flexed">
+            <h1>7 Decades Of Technological<br> Advancements & Space Innovation
+                <div class="small-bar"></div></h1>
+        </section>
+        <section class="history-container">
+            <div class="history-slide" id="slide">
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>The Start Of Horizon</h1>
+                        <p>Founded By 3 talented people: Jerbee Paragas, Andrei Castro, Rojan yepes. They viewed space innovation as a new key to further improve humanity.</p>
+                    </div>
+                    <img src="res/history/hist1.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">2029</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>Rocket Development & Orbit Exploration</h1>
+                        <p>In this year, we started designing Rocket that can carry payload & people into Space.</p>
+                    </div>
+                    <img src="res/history/hist2.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">2031</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>Satellite Development</h1>
+                        <p>We developed new technology of satellite that improve our communication.</p>
+                    </div>
+                    <img src="res/history/hist3.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">2036</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>Conquering The Space</h1>
+                        <p>Horizon Started Space Missions, more Research and Experiments. In this time Horizon conducted study & experiments how human can effectively survive space.</p>
+                    </div>
+                    <img src="res/history/hist4.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">2048</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>1st 3 Human In Red Planet</h1>
+                        <p>The 3 Founder of Horizon, Jerbee Paragas, Andrei Castro, Rojan Yepes risk themselves to conduct the first mission in Mars. They where able to create a dome that containts enough plants that produce oxygen. The First 3 Human In Mars.</p>
+                    </div>
+                    <img src="res/history/hist5.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">2055</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>NASA, SpaceX, Horizon Mission</h1>
+                        <p>More Space Company Joined Horizon's mission in mars to send Advanced 3D printer equiped with Artificial Intelegence in mars to create Domes.</p>
+                    </div>
+                    <img src="res/history/hist6.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container-2">
+                            <h1 class="date">2060</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>Mars Infrastructures & Developing Travel Technology</h1>
+                        <p>Due to the Success of Mars Mission, More improvements are made to achieve more travel efficiency.</p>
+                    </div>
+                    <img src="res/history/hist7.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container-2">
+                            <h1 class="date">2084</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>Our Technology For Everyone</h1>
+                        <p>Due to high demand, we made all of our services not only for governments but also for everyone. Because we believe that all of us should experience these technologies to make our future better.</p>
+                    </div>
+                    <img src="res/history/hist8.png">
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container-2">
+                            <h1 class="date">2090</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexed-2" id="history-slide-content">
+                    <div class="history-details">
+                        <h1>More Future Improvements</h1>
+                        <p>Endless Discoveries & Improvements</p>
+                    </div>
+                    <div class="section-details-container">
+                        <div class="section-details" id="date-container">
+                            <h1 class="date">Future</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div class="btn-pane">
+                    <div class="history-btn" id="toL" onclick="toL()"></div>
+                    <div class="history-btn" id="toR" onclick="toR()"></div>
+                </div>
+            </div>
+        </section>
+        <section class="member">        
+            <hr>
+            <h1>Great People That Makes Horizon Possible
+                <div class="small-bar"></div>
+            </h1>
+            <hr>
+            <div class="member-container">
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Jerbee Paragas</h1>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Rojan Yepes</h1>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Andrei Castro</h1>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Jason Santos</h1>
+                        <p>Chief Operations Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Zalven Dayao</h1>
+                        <p>Technology | Engineering Lead </p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Patrick Legaspi</h1>
+                        <p>Chief Administrative Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Dominic Lagata</h1>
+                        <p>Data analyst | Bussiness Analyst</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Sergio Lagarde</h1>
+                        <p>Chief Financial | Revenue Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Jamiena Franza</h1>
+                        <p>Product | Revenue Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Edward Espere</h1>
+                        <p>Arts & Design Officer</p>
+                    </div>
+                </div>
+                <div class="member-holder" id="memeber1">
+                    <div class="member-details">
+                        <h1>Zandrealyn Macaraeg</h1>
+                        <p>Chief Human Resources </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h1>Services We Offer</h1>
+            <div class="services-available">
+                <a href="services-mars-earth.html" class="service-block" style="background-image: url('res/background/or1.jpg');">
+                   <div>
+                        <h1>Eart Mars Travel</h1>
+                   </div>
+                </a>
+                <a href="services-satellite-production.html" class="service-block" style="background-image: url('res/background/or2.jpg');">
+                    <h1>Satellite Production</h1>
+                </a>
+                <a href="services-rocket-engine.html" class="service-block" style="background-image: url('res/background/or3.jpg');">
+                    <h1>Rocket Engine</h1>
+                </a>
+                <a href="services-payload.html" class="service-block" style="background-image: url('res/background/or4.jpg');">
+                    <h1>Space Payload</h1>
+                </a>
+            </div>
+        </section>
+        <section class="partners-section">
+            <h1>Well Known Companies That Uses Our Services<div class="sma"></div></h1>
+                <div class="partners-container">
+                    <img src="res/partners/tesla.png">
+                    <img src="res/partners/cern.png">
+                    <img src="res/partners/dost.png">
+                    <img src="res/partners/google.png">
+                    <img src="res/partners/IBM.png">
+                    <img src="res/partners/nasa.png">
+                    <img src="res/partners/nytimes.png">
+                    <img src="res/partners/oracle.png">
+                    <img src="res/partners/spacex.png">
+                    <img src="res/partners/huawei.png">
+                    <img src="res/partners/wikipedia.png">
+                    <img src="res/partners/twitter.png">
+                    <img src="res/partners/nvidia.jpg">
+                    <img src="res/partners/cisco.png">
+                    <img src="res/partners/samsung.png">
+                </div>
+        </section>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

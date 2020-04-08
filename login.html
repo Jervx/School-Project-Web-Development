@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/login-style.css">
+    <script src="script/globalScript.js"></script>
+    <script src="script/login.js"></script>
+    <script>    
+    </script>
+    <title>Horizon Login</title>
+</head>
+<body onload="initAccount()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                    <li><a href="signup.html">SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-login-container">
+            <form class="login-form" method="POST">
+                    <h1>Horizon Login</h1>
+                    <p>By loggin in to your account, you can do more!</p>
+                    <input id="form-username" type="text" name="username" placeholder="username" required autocomplete="off">
+                    <input id="form-password" type="password" name="password" placeholder="password" required autocomplete="off"><br>
+            </form>
+            <button onclick="login()">Log In</button>
+            <p>Doesn't have an account yet? <a id="auth-link" href="signup.html">Create</a> now</p>
+        </section>
+        <footer>
+            <div class="final-footer-div"><div class="footer-h1p1-group"><h1>HORIZON</h1><p>All Rights Reserved 2020</p></div></div>
+        </footer>
+    </main>
+</body>
+</html>

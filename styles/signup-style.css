@@ -1,0 +1,80 @@
+
+.main-signup-container{
+    padding-top:40px;
+    margin:10px 30px 0px 30px;
+    font-size:20px;
+}
+
+#auth-link{
+    color:rgb(58, 66, 138);
+}
+
+.main-signup-container h1,p{
+    text-align: center;
+    color:rgb(49, 49, 49);
+}
+
+.main-signup-container p{
+    font-size: 15px;
+    margin-top:20px;
+}
+
+
+.formBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.layout{
+    padding:40px 100px;
+    width: 400px;
+}
+
+.layout input, select{
+    width:400px;
+    max-height:80px;
+    padding:5px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.layout select{
+    width:425px;
+    color:rgb(114, 114, 114);
+}
+
+.warn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+button{
+    font-size:14px;
+    padding:10px 15px 10px 15px;
+    margin-top:30px;
+    background-color:#242424;
+    color:var(--white1-color);
+    border-style: none;
+    border-radius: 4px;
+}
+
+
+#signup-form div{
+    margin:20px;
+}
+
+#signup-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    padding-top:0px;
+}
+
+main{
+    background-image: url("../res/background/HORIZON-white.png");
+}

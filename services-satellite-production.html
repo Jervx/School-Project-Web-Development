@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            doesLogin();
+            loadFooter();
+        }
+    </script>
+    <style>
+        #indent-details-flexed{
+            padding:20px 40px 40px 0px;
+        }
+
+        .cent-aligner{
+            background-image: url("res/background/or2.jpg");
+        }
+    </style>
+    <title>Horizon - Satellite Production</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="details-pane">
+            <div class="title-pane">
+                <div class="cent-aligner">
+                    <img class="service-icon" src="res/ico-svgs/satellite.png">
+                    <h1>Satellite Production</h1>
+                </div>
+                <p class="service-class"><a href="index.html" style="color:inherit;text-decoration:none;">Horizon</a> / <a style="color:inherit; text-decoration: none;" onclick="gotoservices()">services</a> / <span class="service-class-bolder">Satellite Production</span></p>
+                <p>We make our advance satellite available for different companies for different purpose. Because we vision humanity as technology oriented so we create satellites with the lowest cost as possible.</p>
+                <div class="pin-link">
+                    <p><span class="service-class-bolder">NOTE</span>: This Service Need Multiple Checking Before Establishing Agreement. You are required to go to our nearest company branch.</p>
+                    <a href="where-to.html"><img width="33px" src="res/ico-svgs/gps-pin.svg"></a>
+                    <a href="where-to.html">Find Our Nearest Branch Here</a>
+                </div>
+                <div class="pin-link">
+                    <p>Other Services</p>
+                    <p style="padding-top:0px !important"><a href="services-mars-earth.html">Mars Earth Travel</a> | <a href="services-rocket-engine.html">Rocket Engine</a> | <a href="services-payload.html">Space Payload</a></p>
+                </div>
+            </div>
+            <div class="details-details">
+                <div>
+                    <p id="req-text">Requirements For Buying A Satellite</p>
+                    <div class="indented-details">
+                        <p class="service-class">To make sure that our satellite technology will not be used for any harm & bad things, we need to validate some requirements you need to comply before we start producing.   </p>
+                    </div>
+                    <p id="detail-class">Satellite Weight</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="indent-details-flexed">
+                            <li><p><span class="service-class-bolder">Light Plan</span></p><p>up to 500kg</p><p>$1,000 x (50% of kg)</p></li>
+                            <li><p><span class="service-class-bolder">Medium Plan</span></p><p>up to 5,500kg</p><p>$1,500 x (50% of kg)</p></li>
+                            <li><p><span class="service-class-bolder">Heavy Plan</span></p><p>up to 50,150kg</p><p>$2,000 x (50% of kg)</p></li>
+                        </ul>
+                    </div>
+                    <p id="detail-class">Satellite Type/Purpose</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="ul-2flexed">
+                            <li><p>• Communications Satellite</p><p>$625,000</p></li>
+                            <li><p>• Global Positioning System</p><p>$400,000</p></li>
+                            <li><p>• Drone Satellite</p><p>$700,000</p></li>
+                            <li><p>• Nano Satellites, CubeSats and SmallSats (Students)</p><p>$25,000</p></li>
+                            <li><p>• Weather Satellites</p><p>$250,000</p></li>
+                            <li><p>• Globe Imagery Satellites</p><p>$400,000</p></li>
+                            <li><p>• Reconnaissance satellites (For Government Military Only)</p><p>Hidden</p></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="prod-container">
+            <h1>Gallery</h1>
+            <p id="togler-p" onclick="showGallery()" class="clicable">Show Images</p>
+            <div class="prod-gallery" id="prod-hid">
+                <div class="gal-col">
+                    <a href="res/product-gallery/Satellite4.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite4.jpg">
+                            <p>Talented Engineers That Create Satellite</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite3.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite3.jpg">
+                            <p>HR190 Satellite</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite9.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite9.jpg">
+                            <p>Modular Satellite For International Space Station</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/Satellite5.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite5.jpg">
+                            <p>Alpha HR90 Satellite</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite1.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite1.jpg">
+                            <p>Our Satellite in Space</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite6.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite6.jpg">
+                            <p>Our Oldest Satellite That Still in Service</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/Satellite2.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite2.jpg">
+                            <p>Our Launch Team</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite8.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite8.jpg">
+                            <p>Our Satellite That Orbit Mars</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Satellite7.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Satellite7.jpg">
+                            <p>Early Version Of Alpha HR90 Satellite</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="feedback-tell">
+            <div class="feedback-tell-cont">
+                <h1>We Love To Hear What You Think, Send Us Feedback!</h1>
+                <p>Your Feedback will help us to further improve our services. We really love to hear your Feedback.</p>
+            </div>
+            <img src="res/ico-svgs/feedback-black.svg" height="80px">
+            <a href="feedback-form.html">Send Feedback</a>
+        </div>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

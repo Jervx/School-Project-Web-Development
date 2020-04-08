@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css"> 
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            doesLogin();
+            loadFooter();
+        }
+    </script>
+    <style>
+        #indent-details-flexed{
+            padding:20px 40px 40px 0px;
+        }
+
+        .cent-aligner{
+            background-image: url("res/background/or4.jpg");
+        }
+    </style>
+    <title>Horizon - Space Payload</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="details-pane">
+            <div class="title-pane">
+                <div class="cent-aligner">
+                    <img class="service-icon" src="res/ico-svgs/package.png">
+                    <h1>Space Payload</h1>
+                </div>
+                <p class="service-class"><a href="index.html" style="color:inherit;text-decoration:none;">Horizon</a> / <a style="color:inherit; text-decoration: none;" onclick="gotoservices()">services</a> / <span class="service-class-bolder">Space Payload</span></p>
+                <p>We are the first company that enables space travel to Mars and are capable of carrying passengers & cargo to Mars. </p>
+                <div class="pin-link">
+                    <p><span class="service-class-bolder">NOTE</span>: This Service Need Multiple Checking Before Establishing Agreement. You are required to go to our nearest company branch.</p>
+                    <a href="where-to.html"><img width="33px" src="res/ico-svgs/gps-pin.svg"></a>
+                    <a href="where-to.html">Find Our Nearest Branch Here</a>
+                </div>
+                <div class="pin-link">
+                    <p>Other Services</p>
+                    <p style="padding-top:0px !important"><a href="services-mars-earth.html">Mars Earth Travel</a> | <a href="services-satellite-production.html">Satellite Production</a> | <a href="services-rocket-engine.html">Rocket Engine</a></p>
+                </div>
+            </div>
+            <div class="details-details">
+                <div>
+                    <p id="req-text">Requirements For Sending Objects To Space</p>
+                    <div class="indented-details">
+                        <p class="service-class">To make sure that every customer object reach their destination, we also need to verify the purpose, size, weight of the object to ensure proper configurations.</p>
+                    </div>
+                    <p id="detail-class">Payload Purpose</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="indent-details-flexed">
+                            <li><p>Personal Experiment</p></li>
+                            <li><p>Orbital Satellite</p></li>
+                            <li><p>ISS Supply Delivery</p></li>
+                        </ul>
+                    </div>
+                    <p id="detail-class">Payload Weight & Size Must Qualify Weight Allowance Bellow</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="indent-details-flexed">
+                            <li><p><span class="service-class-bolder">Light Plan</span></p><p>Dimension up to 22'</p><p>up to 500kg</p><p>$1,300 x (50% of kg)</p></li>
+                            <li><p><span class="service-class-bolder">Medium Plan</span></p><p>Dimension up to 35'</p><p>up to 5,500kg</p><p>$1,800 x (50% of kg)</p></li>
+                            <li><p><span class="service-class-bolder">Heavy Plan</span></p><p>Dimension up to 45'</p><p>up to 50,150kg</p><p>$2,000 x (50% of kg)</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prod-container">
+            <h1>Gallery</h1>
+            <p id="togler-p" onclick="showGallery()" class="clicable">Show Images</p>
+            <div class="prod-gallery" id="prod-hid">
+                <div class="gal-col">
+                    <a href="res/product-gallery/payload1.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/payload1.jpg">
+                            <p>Philippine Payload: Diwata-1 Cube Satellite</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/payload2.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/payload2.jpg">
+                            <p>Philippine Diwata-2 Cube Satellite</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/payload3.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/payload3.jpg">
+                            <p>Google Payload Satellite Successfuly sent to space</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/payload4.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/payload4.jpg">
+                            <p>ISS Payload Supplies Sent for Our Dear astronauts</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/payload5.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/payload5.jpg">
+                            <p>Payload Mounted On ISS</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="feedback-tell">
+            <div class="feedback-tell-cont">
+                <h1>We Love To Hear What You Think, Send Us Feedback!</h1>
+                <p>Your Feedback will help us to further improve our services. We really love to hear your Feedback.</p>
+            </div>
+            <img src="res/ico-svgs/feedback-black.svg" height="80px">
+            <a href="feedback-form.html">Send Feedback</a>
+        </div>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .cover{
+                background: url("res/background/main-back.png");
+            }
+
+            .cover-sayings h1{
+                font-weight: 100;
+            }
+
+            .section-title h1{
+                text-align: center!important;
+                transform: rotate(-50deg);
+                font-size:var(--white1-color);
+                line-height:50px;
+            }
+
+            #video-container{
+                background-image: url("res/background/HORIZON6.png");
+                align-items: center;
+                gap:20px;
+            }
+
+            #video-container video{
+                max-width: 70%;
+            }
+
+            #video-container h1{
+                color:var(--white2-color);
+                line-height: 50px;
+                font-size: 30px;
+                font-weight: 100;
+            }
+        </style>
+        <link rel="stylesheet" href="styles/global.css">
+        <script src="script/globalScript.js"></script>
+        <script>
+            function load(){
+                if(stor_get("scroll-request") != null){
+                    document.documentElement.scrollTop = parseInt(stor_get("scroll-request"));
+                    localStorage.removeItem("scroll-request");
+                }
+                loadFooter();
+                doesLogin();
+            }
+        </script>
+        <title>Horizon - Home</title>
+    </head>
+    <body onload="load()">
+        <main id="main">
+            <header class="top" id="header-navigation">
+                <a href="index.html">Horizon</a>
+                <div></div>
+                <nav>
+                    <ul id="nav-list">
+                        <li><a href="about.html" class="navigation-a">Company</a></li>
+                        <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                        <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="main-cover" >
+                <div class="cover">
+                    <div class="cover-sayings">
+                        <h1>Strive For Space Innovation & Technological Advancement</h1>
+                        <p>We are here to make humanity achieve technological advanements & space innovation</p>
+                    </div>
+                    <div class="blank-box"></div>
+                </div>
+            </section class="flexed-2" id="video-class">
+            <section id="video-container" class="flexed-2">
+                <h1>We are the worlds Leading Space Company That Deliver Advance Space Services For Everyone</h1>
+                <video controls autoplay loop src="res/video/about.mp4"></video>
+            </section>
+            <section class="flexed-2" id="section1">
+                <div class="fraction2" id="service-container">
+                    <a href="services-mars-earth.html" class="service-block" style="background-image: url('res/background/or1.jpg');">
+                        <img height="80px" src="res/ico-svgs/mars-96.png">
+                        <h1>Eart Mars Travel</h1>
+                        <p>One of our Services bring you to the new Planet Mars. There are already 5 companies operating in Mars that currently supports 300,000 Visitors. This will result to faster expansion of life in the Planet Mars.</p>
+                    </a>
+                    <a href="services-satellite-production.html" class="service-block" style="background-image: url('res/background/or2.jpg');">
+                        <img height="80px" src="res/ico-svgs/satellite.png">
+                        <h1>Satellite Production</h1>
+                        <p>We developed satellites for different companies for data-transmission, research & weather purposes. We also developed Long Distance Orbit(LDO) satellites to improve data transmission between Earth & Mars.</p>
+                    </a>
+                    <a href="services-rocket-engine.html" class="service-block" style="background-image: url('res/background/or3.jpg');">
+                        <img height="80px" src="res/ico-svgs/thruster.png">
+                        <h1>Rocket Engine</h1>
+                        <p>We make sure that our unique engines are safe, reliable, & always available to other space company to further support the advancement of humanity in field of space travel & research.</p>
+                    </a>
+                    <a href="services-payload.html" class="service-block" style="background-image: url('res/background/or4.jpg');">
+                        <img height="80px" src="res/ico-svgs/package.png">
+                        <h1>Space Payload</h1>
+                        <p>For the last 3 decades, we only accept payload service from science companies & government, but now we've decided that we make it available to help other company to become technology oriented with low cost.</p>
+                    </a>
+                </div>
+                <div class="section-details-container">
+                    <div class="section-details">
+                        <h1>Services For You & Your Company</h1>
+                        <div class="small-bar"></div>
+                        <p>We provide different services to everyone ranging from space travel, engine development, satellite production & payload delivery</p>
+                    </div>
+                </div>
+            </section>
+            <div class="feedback-tell">
+                <div class="feedback-tell-cont">
+                    <h1>We Love To Hear What You Think, Send Us Feedback!</h1>
+                    <p>Your Feedback will help us to further improve our services. We really love to hear your Feedback.</p>
+                </div>
+                <img src="res/ico-svgs/feedback-black.svg" height="80px">
+                <a href="feedback-form.html">Send Feedback</a>
+            </div>
+            <footer id="global-footer">
+            </footer>
+        </main>
+    </body>
+</html>

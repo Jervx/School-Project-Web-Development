@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            doesLogin();
+            loadFooter();
+        }
+    </script>
+    <style>
+        #indent-details-flexed{
+            padding:20px 40px 40px 0px;
+            display:grid !important;
+            gap:23px;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .cent-aligner{
+            background-image: url("res/background/or3.jpg");
+        }
+    </style>
+    <title>Horizon - Rocket Engine</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="details-pane">
+            <div class="title-pane">
+                <div class="cent-aligner">
+                    <img class="service-icon" src="res/ico-svgs/thruster.png">
+                    <h1>Rocket Engine</h1>
+                </div>
+                <p class="service-class"><a href="index.html" style="color:inherit;text-decoration:none;">Horizon</a> / <a style="color:inherit; text-decoration: none;" onclick="gotoservices()">services</a> / <span class="service-class-bolder">Rocket Engine</span></p>
+                <p>We have the most efficient rocket engines that are currently available. This enables our rocket to reach far beyond space with ease and safety.</p>
+                <div class="pin-link">
+                    <p><span class="service-class-bolder">NOTE</span>: This Service Need Multiple Checking Before Establishing Agreement. You are required to go to our nearest company branch.</p>
+                    <a href="where-to.html"><img width="33px" src="res/ico-svgs/gps-pin.svg"></a>
+                    <a href="where-to.html">Find Our Nearest Branch Here</a>
+                </div>
+                <div class="pin-link">
+                    <p>Other Services</p>
+                    <p style="padding-top:0px !important"><a href="services-mars-earth.html">Mars Earth Travel</a> | <a href="services-satellite-production.html">Satellite Production</a> | <a href="services-payload.html">Space Payload</a></p>
+                </div>
+            </div>
+            <div class="details-details">
+                <div>
+                    <p id="req-text">Requirements For Buying An Engine</p>
+                    <div class="indented-details">
+                        <p class="service-class">Before buying our different sets of engines, we need to make sure that you are qualified. Due to our advanced engines, we need to make sure that it will not going to the wrong hands. So you or your company are required to meet us on one of our branches.</p>
+                    </div>
+                    <p id="detail-class">Choose Engine</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="indent-details-flexed">
+                            <li>
+                                <p><span class="service-class-bolder">HR6</span></p>
+                                <p><span class="service-class-bolder">Force: </span>914 KN</p>
+                                <p><span class="service-class-bolder">Burn Time: </span>27 minutes</p>
+                                <p><span class="service-class-bolder">Propellant: </span>LOX / R-grade Kerosene</p>
+                            </li>
+                            <li>
+                                <p><span class="service-class-bolder">HR7</span></p>
+                                <p><span class="service-class-bolder">Force: </span>1305 KN</p>
+                                <p><span class="service-class-bolder">Burn Time: </span>35 minutes</p>
+                                <p><span class="service-class-bolder">Propellant: </span>LOX / Liquid-Methane</p>
+                            </li>
+                            <li>
+                                <p><span class="service-class-bolder">HR8</span></p>
+                                <p><span class="service-class-bolder">Force: </span>1850 KN</p>
+                                <p><span class="service-class-bolder">Burn Time: </span>40 minutes</p>
+                                <p><span class="service-class-bolder">Propellant: </span>LOX / R-grade Kerosene</p>
+                            </li>
+                            <li>
+                                <p><span class="service-class-bolder">HR9H</span></p>
+                                <p><span class="service-class-bolder">Force: </span>2350 KN</p>
+                                <p><span class="service-class-bolder">Burn Time: </span>48 minutes</p>
+                                <p><span class="service-class-bolder">Propellant: </span>LOX / Liquid-Methane</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="detail-class">Engine Usage/Purpose</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="ul-2flexed">
+                            <li><p>• Can Be Used for Education</p></li>
+                            <li><p>• Can Be Used for Research</p></li>
+                            <li><p>• Can Be Used for Rocket Development</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prod-container">
+            <h1>Gallery</h1>
+            <p id="togler-p" onclick="showGallery()" class="clicable">Show Images</p>
+            <div class="prod-gallery" id="prod-hid">
+                <div class="gal-col">
+                    <a href="res/product-gallery/Rocket1.png">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket1.png">
+                            <p>HR9H Engine Sketch</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Rocket4.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket4.jpg">
+                            <p>HR6 Rocket Engine Test Run</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/Rocket3.png">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket3.png">
+                            <p>HR7 Engine Sketch</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Rocket7.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket7.jpg">
+                            <p>9 HR8 Engine Ready For Launch</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Rocket6.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket6.jpg">
+                            <p>HR9H Engine Test Run</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/Rocket2.png">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket2.png">
+                            <p>HR6 Combustion Chamber Sketch</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Rocket8.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket8.jpg">
+                            <p>Rocket Engines Ready For Delivery</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/Rocket5.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/Rocket5.jpg">
+                            <p>HR8 Rocket Engine Test Run</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="feedback-tell">
+            <div class="feedback-tell-cont">
+                <h1>We Love To Hear What You Think, Send Us Feedback!</h1>
+                <p>Your Feedback will help us to further improve our services. We really love to hear your Feedback.</p>
+            </div>
+            <img src="res/ico-svgs/feedback-black.svg" height="80px">
+            <a href="feedback-form.html">Send Feedback</a>
+        </div>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

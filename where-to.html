@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css"> 
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            doesLogin();
+            loadFooter();
+        }
+    </script>
+    <style>
+
+        .where{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
+
+        .cover{
+            background-image: url("res/background/world-map.svg");
+            background-size: cover;
+            padding:0px;
+        }
+
+        .tickets{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            padding:80px;
+        }
+
+        .ti{
+            padding-bottom:70px;
+            font-size: 40px;
+            font-weight: 100;
+        }
+
+        .tickets-seller{
+            display:flex;
+            gap:100px;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        
+        .places{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding:20px;
+        }
+
+        .place-list{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:40px;
+            padding:40px;
+        }
+
+        .place-list-block{
+            padding:20px;
+            border-bottom: 1px solid gray;
+        }
+
+        .place-list-block h1{
+            font-weight: 300;
+            color:rgb(65, 65, 65);
+            font-size: 24px;
+            padding-bottom:25px;
+        }
+
+        .place-list-block p{
+            line-height: 25px;
+            color:rgb(70, 70, 70);
+        }
+
+        .small-bar{
+            margin-top:10px;
+            width:130px;
+            background-color: rgb(92, 92, 92) !important;
+        }
+
+        img{
+            padding-right: 5px;
+        }
+    </style>
+    <title>Horizon - Where To Buy</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="cover">
+        </section>
+        <section class="where">
+            <div class="tickets">
+                <h1 class="ti">Trusted Ticket Sellers<div class="small-bar"></div></h1>
+                <div class="tickets-seller">
+                    <img src="res/background/bayadcenter.png" height="90px">
+                    <img src="res/background/skyspace.png" height="90px">
+                    <img src="res/background/fluvia.png" height="90px">
+                    <img src="res/background/urspace.png" height="90px">
+                </div>
+             </div>
+            <div class="places">
+               <h1 class="ti">Our Company Branches<div class="small-bar"></div></h1>
+               <div class="place-list">
+                    <div class="place-list-block">
+                        <h1>Philippines<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Blk. 3 Lot 5, Horizon Building, Taft Avenue Corner Smith, Quezon City, Philippines</p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>United States<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Cape Canaveral, Brevard County, Florida, United States</p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>China<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Xichang Zouhwei St., Ching-Chang-Chong City, China</p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>Japan<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">24th Kawaii Ave., Tokyo, japan</p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>Russia<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Promyshlennaya Ulitsa, Severobaykalsk, Buryatiya Republits, Russia </p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>UAE<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Al Ruwaikah, الرويكه, Abu Dhabi, United Arab Emirates </p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>South Korea<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Haneul-gil, 하늘길, Gangseo-gu, Seoul, South Korea</p>
+                    </div>
+                    <div class="place-list-block">
+                        <h1>Malaysia<div class="small-bar"></div></h1>
+                        <p><img width="17px" src="res/ico-svgs/gps-pin.svg">Petra Jaya, 93010 Kuching, Sarawak, Malaysia </p>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

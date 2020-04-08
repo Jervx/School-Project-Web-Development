@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <style>
+        #indent-details-flexed {
+            padding:20px 40px 40px 0px;
+        }
+
+        #indent-details-flexed li{
+            margin:0px 50px 0px 50px;
+        }
+
+        .cent-aligner{
+            background-image: url("res/background/or1.jpg");
+        }
+    </style>
+    <script src="script/globalScript.js"></script>
+    <script>
+        function load(){
+            doesLogin();
+            loadFooter();
+        }
+    </script>
+    <title>Horizon - Earth Mars</title>
+</head>
+<body onload="load()">
+    <main>
+        <header class="top" id="header-navigation">
+            <a href="index.html">Horizon</a>
+            <div></div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="about.html" class="navigation-a">Company</a></li>
+                    <li><a onclick="gotoservices()" class="navigation-a">Services</a></li>
+                    <li><a href="where-to.html" class="navigation-a">Where To?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="details-pane">
+            <div class="title-pane">
+                <div class="cent-aligner">
+                    <img class="service-icon" src="res/ico-svgs/mars-96.png">
+                    <h1>Earth Mars Travel</h1>
+                </div>
+                <p class="service-class"><a href="index.html" style="color:inherit;text-decoration:none;">Horizon</a> / <a style="color:inherit; text-decoration: none;" onclick="gotoservices()">services</a> / <span class="service-class-bolder">Earth Mars Travel</span></p>
+                <P>One of our Services bring you to the new Planet Mars. There are already 5 companies operating in Mars that currently supports 300,000 Visitors. This will result to faster expansion of life in the Planet Mars.</P>
+                <p>We are the first company that enables space travel and are capable of carrying passengers & cargo to Mars with low cost. </p>
+                <div class="pin-link">
+                    <a href="where-to.html"><img width="33px" src="res/ico-svgs/gps-pin.svg"></a>
+                    <a href="where-to.html">Know Where To Buy Ticket Here</a>
+                </div>
+                <div class="pin-link">
+                    <p>Other Services</p>
+                    <p style="padding-top:0px !important"><a href="services-satellite-production.html">Satellite Production</a> | <a href="services-rocket-engine.html">Rocket Engine</a> | <a href="services-payload.html">Space Payload</a></p>
+                </div>
+            </div>
+            <div class="details-details">
+                <div>
+                    <p id="req-text">Requirements For The Earth Mars Travel</p>
+                    <div class="indented-details">
+                        <p class="service-class">To make sure that every travel is safe, we've set requirements for every passenger before they receive their tickets. We always keep in mind what's the best parameters to make the flight safe for our dear customer</p>
+                    </div>
+                    <p id="detail-class">Passenger & Baggage</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details" id="indent-details-flexed">
+                            <li><p>Max Person Weight</p><p>90kg</p></li>
+                            <li><p>Max Baggage Weight</p><p>55kg</p></li>
+                        </ul>
+                    </div>
+                    <p id="detail-class">Physical & Mental Health</p>
+                    <hr>
+                    <div class="indented-details">
+                        <ul class="ul-details">
+                            <li><p>Must be free from any disease or any heart problems.</p></li>
+                            <li><p>Must be free from any dependency on drugs, alcohol or tobacco</p></li>
+                            <li><p>Must be free from any psychiatric disorders</p></li>
+                            <li><p>Age must be atleast 10 above</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prod-container">
+            <h1>Gallery</h1>
+            <p id="togler-p" onclick="showGallery()" class="clicable">Show Images</p>
+            <div class="prod-gallery" id="prod-hid">
+                <div class="gal-col">
+                    <a href="res/product-gallery/earth-mars3.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars3.jpg">
+                            <p>Our Launch Team</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars5.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars5.jpg">
+                            <p>HR 9 Rocket bring you to mars</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars-caps1.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars-caps1.jpg">
+                            <p>HR Alpha</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars6.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars6.jpg">
+                            <p>Skilled Pilot For Safe Travel</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars7.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars7.jpg">
+                            <p>HR 9 Loading Passenger</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars17.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars17.jpg">
+                            <p>Mars Beautiful Land</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/earth-mars8.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars8.jpg">
+                            <p>Interior Of HR Alpha</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars9.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars9.jpg">
+                            <p>HR Alpha's Advance Seat Ergonomics</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars-caps2.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars-caps2.jpg">
+                            <p>HR Alpha Docking To ISS</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars10.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars10.jpg">
+                            <p>Advanced HR Alpha Guidance Monitor</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars11.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars11.jpg">
+                            <p>HR Alpha Guidance Monitor</p>
+                        </div>
+                    </a>
+
+                    <a href="res/product-gallery/earth-mars18.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars18.jpg">
+                            <p>HR Alpha Emergency Ejection</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/earth-mars12.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars12.jpg">
+                            <p>HR Alpha's Advanced Controls</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars13.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars13.jpg">
+                            <p>Interior Photo of one of Mars House</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars14.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars14.jpg">
+                            <p>HR Alpha's Interior Design</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars15.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars15.jpg">
+                            <p>HR Alpha's Emergency Ejection</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars16.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars16.jpg">
+                            <p>OTW to Mars</p>
+                        </div>
+                    </a>    
+                </div>
+                <div class="gal-col">
+                    <a href="res/product-gallery/earth-mars19.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars19.jpg">
+                            <p>Night Photo In Mars</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars20.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars20.jpg">
+                            <p>Morning Dust Tornado in Mars</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars21.jpg">
+                        <div class="prod-pane">
+                            <<img src="res/product-gallery/earth-mars21.jpg">
+                            <p>Calm Morning in Mars</p>
+                        </div>
+                    </a>
+                    <a href="res/product-gallery/earth-mars22.jpg">
+                        <div class="prod-pane">
+                            <img src="res/product-gallery/earth-mars22.jpg">
+                            <p>Close Up Shot On Rocket Launch</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="feedback-tell">
+            <div class="feedback-tell-cont">
+                <h1>We Love To Hear What You Think, Send Us Feedback!</h1>
+                <p>Your Feedback will help us to further improve our services. We really love to hear your Feedback.</p>
+            </div>
+            <img src="res/ico-svgs/feedback-black.svg" height="80px">
+            <a href="feedback-form.html">Send Feedback</a>
+        </div>
+        <footer id="global-footer"></footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,271 @@
+.main-cover{
+    background-image: url("../res/background/or10.jpg");
+    background-size: cover;
+}
+
+.cover{
+    height:434px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.cover-sayings h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+main{
+    background-color: white;
+}
+
+/***************/
+.history-flexed{
+    display:flex;
+    justify-content: space-evenly;
+    padding:50px 50px 20px 50px;
+}
+
+.history-flexed > h1{
+    color:var(--dark2-color);
+    font-size:30px;
+    margin:0px 210px 0px 210px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 46px;
+}
+
+.blank-box{
+    width:700px;
+}
+
+.history-details{
+    margin:30px 20px 30px 20px;
+    padding:10px;
+    width: 500px;
+}
+
+#history-slide-content{
+    border-bottom:1px solid rgba(0,0,0,0.3);
+    margin:0px 20px 0px 20px;
+}
+
+.history-details h1{
+    color:var(--dark2-color);
+    font-weight: 100;
+    font-size:24px;
+}
+
+.history-details p{
+    margin-top:20px;
+    color:var(--dark3-color);
+}
+
+.date{
+    color:var(--dark4-color);
+    font-weight: lighter;
+}
+
+.section-details-container{
+    margin:10px;
+}
+
+.small-bar{
+    background-color: var(--dark3-color);
+    width:60px
+}
+
+.flexed-2{
+    padding:0px 20px 0px 20px;
+    justify-content: space-evenly;
+}
+
+.btn-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-container{
+    overflow: hidden;
+    margin-top:20px;
+}
+
+.history-slide{
+    transform:translateX(0);
+    transition: 0.5s ease-in-out;
+    display:flex;
+}
+
+#history-slide-content{
+    margin-top:120px;
+    padding-top:10px;
+    background-color: rgb(243, 243, 243);
+    /*box-shadow: 2px -2px 40px rgba(70,70,70,0.1);*/
+}
+
+#history-slide-content img{
+    height:200px;
+    width:200px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(60,60,60,0.1);
+    top:-15%;
+}
+
+.history-btn{
+    transition: 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin:40px 10px 40px 10px;
+    padding:25px;
+    border-radius: 50%;
+    background-size:40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.history-details p{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 25px;
+}
+
+.history-btn:active {
+    transition: 0;
+    background-color: rgb(77, 104, 98) !important;
+}
+
+.btn-pane{
+    display:flex;
+}
+
+#toL{
+    background-image: url("../res/ico-svgs/left-arrow-gray.svg");
+}
+
+#toL:hover{
+    transition: 0.2s ease-out;
+    background-image: url("../res/ico-svgs/left-arrow-white.svg");
+    background-color: rgb(103, 129, 123);
+}
+
+#toR{
+    background-image: url("../res/ico-svgs/right-arrow-gray.svg");
+}
+
+#toR:hover{
+    transition: 0.2s ease-out;
+    background-image: url("../res/ico-svgs/right-arrow-white.svg");
+    background-color: rgb(103, 129, 123);
+}
+
+.member{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var( --footer-back-dark);
+    background-image: url("/res/background/HORIZON6.png");
+    padding-bottom: 80px;
+}
+
+.member > h1{
+    padding:80px 200px 10px 200px;
+    font-size: 40px;
+    line-height: 70px;
+    color:rgb(231, 231, 231);
+    font-weight: 100;
+}
+
+.member-container{
+    margin-top:80px;
+    margin-bottom:30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.member-details{
+    padding:20px 80px 15px;
+    margin-left:30px;
+}
+
+.member-details h1{
+    font-size: 21px;
+    color:rgb(216, 216, 216);
+    font-weight: 100;
+}
+
+.member-details p{
+    padding-top:10px;
+    color:rgb(91, 110, 151);
+}
+
+hr{
+    width: 1200px;
+    border:1px solid rgb(44, 44, 44);
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px;
+    background-color: rgb(253, 253, 253);
+}
+
+.services > h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:40px;
+    font-weight: 100;
+    color:rgb(55, 107, 95);
+}
+
+.services-available{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service-block{
+    border-radius: 2px;
+    width: 240px;
+    height:240px;
+    padding:30px;
+}
+
+.service-block h1{
+    margin-top:100px;
+}
+
+.service-block:hover{
+    width:240px;
+}
+
+.partners-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners-section h1{
+    color:var(--dark2-color);
+    font-size: 30px;
+    margin:20px;
+    font-weight: 100;
+    padding-right: 30%;
+    padding-bottom: 10px;
+}
+
+.partners-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:90px;
+    margin:70px 300px;
+}
+
+.partners-container img{
+    max-height: 80px;
+    max-width: 120px;
+}
