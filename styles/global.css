@@ -1,6 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 :root{
-
     --footer-back-dark:#1d1d1d;
     
     --white-color:rgb(255,255,255);
@@ -25,6 +24,8 @@
     --h-title-big:45px;
     --h-title-product:25px;
 }
+
+body{font-family: 'Nanum Gothic', sans-serif;}
 
 header{
     display:flex;
